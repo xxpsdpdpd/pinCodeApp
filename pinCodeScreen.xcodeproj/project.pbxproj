@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5495F2F62A370C00005161F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5495F2F52A370C00005161F2 /* AppDelegate.swift */; };
+		5495F2F82A370C00005161F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5495F2F72A370C00005161F2 /* SceneDelegate.swift */; };
+		5495F2FA2A370C00005161F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5495F2F92A370C00005161F2 /* ViewController.swift */; };
+		5495F2FD2A370C00005161F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5495F2FB2A370C00005161F2 /* Main.storyboard */; };
+		5495F3002A370C00005161F2 /* pinCodeScreen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5495F2FE2A370C00005161F2 /* pinCodeScreen.xcdatamodeld */; };
+		5495F3022A370C02005161F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5495F3012A370C02005161F2 /* Assets.xcassets */; };
+		5495F3052A370C02005161F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5495F3032A370C02005161F2 /* LaunchScreen.storyboard */; };
+		5495F3192A371100005161F2 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5495F3182A371100005161F2 /* NibLoadable.swift */; };
+		54C945AB2A37170A00DD0AFA /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C945AA2A37170A00DD0AFA /* NumberPadView.swift */; };
+		54C945B02A37175400DD0AFA /* NumberPadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C945AE2A37175400DD0AFA /* NumberPadCell.swift */; };
+		54C945B12A37175400DD0AFA /* NumberPadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C945AF2A37175400DD0AFA /* NumberPadCell.xib */; };
+		54C945B32A37176A00DD0AFA /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C945B22A37176A00DD0AFA /* UICollectionView+Extension.swift */; };
+		54C945B62A3717AB00DD0AFA /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C945B52A3717AB00DD0AFA /* NSObject+Extension.swift */; };
+		54C945BD2A371B9E00DD0AFA /* NumberPadCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C945BC2A371B9E00DD0AFA /* NumberPadCellModel.swift */; };
+		54C945BF2A371D5E00DD0AFA /* NumberPadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C945BE2A371D5E00DD0AFA /* NumberPadView.xib */; };
+		54C945C22A37280900DD0AFA /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C945C12A37280900DD0AFA /* PinView.swift */; };
+		54C945C42A37280D00DD0AFA /* PinView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C945C32A37280D00DD0AFA /* PinView.xib */; };
+		54C945CA2A3735E600DD0AFA /* CompletedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C945C82A3735E600DD0AFA /* CompletedVC.swift */; };
+		54C945CB2A3735E600DD0AFA /* CompletedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C945C92A3735E600DD0AFA /* CompletedVC.xib */; };
+		54C945CE2A3737AC00DD0AFA /* PasscodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C945CC2A3737AC00DD0AFA /* PasscodeVC.swift */; };
+		54C945CF2A3737AC00DD0AFA /* PasscodeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C945CD2A3737AC00DD0AFA /* PasscodeVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5495F2F22A370C00005161F2 /* pinCodeScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinCodeScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5495F2F52A370C00005161F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5495F2F72A370C00005161F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5495F2F92A370C00005161F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5495F2FC2A370C00005161F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5495F2FF2A370C00005161F2 /* pinCodeScreen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pinCodeScreen.xcdatamodel; sourceTree = "<group>"; };
+		5495F3012A370C02005161F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5495F3042A370C02005161F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5495F3062A370C02005161F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5495F3182A371100005161F2 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		54C945AA2A37170A00DD0AFA /* NumberPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadView.swift; sourceTree = "<group>"; };
+		54C945AE2A37175400DD0AFA /* NumberPadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadCell.swift; sourceTree = "<group>"; };
+		54C945AF2A37175400DD0AFA /* NumberPadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberPadCell.xib; sourceTree = "<group>"; };
+		54C945B22A37176A00DD0AFA /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		54C945B52A3717AB00DD0AFA /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		54C945BC2A371B9E00DD0AFA /* NumberPadCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadCellModel.swift; sourceTree = "<group>"; };
+		54C945BE2A371D5E00DD0AFA /* NumberPadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberPadView.xib; sourceTree = "<group>"; };
+		54C945C12A37280900DD0AFA /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
+		54C945C32A37280D00DD0AFA /* PinView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PinView.xib; sourceTree = "<group>"; };
+		54C945C82A3735E600DD0AFA /* CompletedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedVC.swift; sourceTree = "<group>"; };
+		54C945C92A3735E600DD0AFA /* CompletedVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompletedVC.xib; sourceTree = "<group>"; };
+		54C945CC2A3737AC00DD0AFA /* PasscodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeVC.swift; sourceTree = "<group>"; };
+		54C945CD2A3737AC00DD0AFA /* PasscodeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasscodeVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5495F2EF2A370C00005161F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5495F2E92A370C00005161F2 = {
+			isa = PBXGroup;
+			children = (
+				5495F2F42A370C00005161F2 /* pinCodeScreen */,
+				5495F2F32A370C00005161F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5495F2F32A370C00005161F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5495F2F22A370C00005161F2 /* pinCodeScreen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5495F2F42A370C00005161F2 /* pinCodeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				54C945D22A37386200DD0AFA /* Application */,
+				54C945C72A3735D300DD0AFA /* Screens */,
+				54C945B42A37177000DD0AFA /* Extension */,
+				5495F3172A3710F9005161F2 /* Helpers */,
+				5495F30C2A370C0A005161F2 /* Views */,
+				5495F3012A370C02005161F2 /* Assets.xcassets */,
+				5495F3062A370C02005161F2 /* Info.plist */,
+				5495F2FE2A370C00005161F2 /* pinCodeScreen.xcdatamodeld */,
+			);
+			path = pinCodeScreen;
+			sourceTree = "<group>";
+		};
+		5495F30C2A370C0A005161F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				54C945C02A37245A00DD0AFA /* PinView */,
+				5495F30D2A370C16005161F2 /* Keyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5495F30D2A370C16005161F2 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				54C945D32A3738E700DD0AFA /* Cells */,
+				54C945AA2A37170A00DD0AFA /* NumberPadView.swift */,
+				54C945BE2A371D5E00DD0AFA /* NumberPadView.xib */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		5495F3172A3710F9005161F2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5495F3182A371100005161F2 /* NibLoadable.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		54C945B42A37177000DD0AFA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				54C945B22A37176A00DD0AFA /* UICollectionView+Extension.swift */,
+				54C945B52A3717AB00DD0AFA /* NSObject+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		54C945C02A37245A00DD0AFA /* PinView */ = {
+			isa = PBXGroup;
+			children = (
+				54C945C12A37280900DD0AFA /* PinView.swift */,
+				54C945C32A37280D00DD0AFA /* PinView.xib */,
+			);
+			path = PinView;
+			sourceTree = "<group>";
+		};
+		54C945C72A3735D300DD0AFA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				54C945D12A37384E00DD0AFA /* Completed */,
+				54C945D02A37384400DD0AFA /* Passcode */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		54C945D02A37384400DD0AFA /* Passcode */ = {
+			isa = PBXGroup;
+			children = (
+				54C945CC2A3737AC00DD0AFA /* PasscodeVC.swift */,
+				54C945CD2A3737AC00DD0AFA /* PasscodeVC.xib */,
+			);
+			path = Passcode;
+			sourceTree = "<group>";
+		};
+		54C945D12A37384E00DD0AFA /* Completed */ = {
+			isa = PBXGroup;
+			children = (
+				54C945C82A3735E600DD0AFA /* CompletedVC.swift */,
+				54C945C92A3735E600DD0AFA /* CompletedVC.xib */,
+			);
+			path = Completed;
+			sourceTree = "<group>";
+		};
+		54C945D22A37386200DD0AFA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5495F3032A370C02005161F2 /* LaunchScreen.storyboard */,
+				5495F2F52A370C00005161F2 /* AppDelegate.swift */,
+				5495F2F72A370C00005161F2 /* SceneDelegate.swift */,
+				5495F2F92A370C00005161F2 /* ViewController.swift */,
+				5495F2FB2A370C00005161F2 /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		54C945D32A3738E700DD0AFA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				54C945AE2A37175400DD0AFA /* NumberPadCell.swift */,
+				54C945AF2A37175400DD0AFA /* NumberPadCell.xib */,
+				54C945BC2A371B9E00DD0AFA /* NumberPadCellModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5495F2F12A370C00005161F2 /* pinCodeScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5495F3092A370C02005161F2 /* Build configuration list for PBXNativeTarget "pinCodeScreen" */;
+			buildPhases = (
+				5495F2EE2A370C00005161F2 /* Sources */,
+				5495F2EF2A370C00005161F2 /* Frameworks */,
+				5495F2F02A370C00005161F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pinCodeScreen;
+			productName = pinCodeScreen;
+			productReference = 5495F2F22A370C00005161F2 /* pinCodeScreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5495F2EA2A370C00005161F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5495F2F12A370C00005161F2 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 5495F2ED2A370C00005161F2 /* Build configuration list for PBXProject "pinCodeScreen" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5495F2E92A370C00005161F2;
+			productRefGroup = 5495F2F32A370C00005161F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5495F2F12A370C00005161F2 /* pinCodeScreen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5495F2F02A370C00005161F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C945CB2A3735E600DD0AFA /* CompletedVC.xib in Resources */,
+				54C945BF2A371D5E00DD0AFA /* NumberPadView.xib in Resources */,
+				54C945CF2A3737AC00DD0AFA /* PasscodeVC.xib in Resources */,
+				5495F3052A370C02005161F2 /* LaunchScreen.storyboard in Resources */,
+				54C945C42A37280D00DD0AFA /* PinView.xib in Resources */,
+				5495F3022A370C02005161F2 /* Assets.xcassets in Resources */,
+				5495F2FD2A370C00005161F2 /* Main.storyboard in Resources */,
+				54C945B12A37175400DD0AFA /* NumberPadCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5495F2EE2A370C00005161F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C945B32A37176A00DD0AFA /* UICollectionView+Extension.swift in Sources */,
+				54C945B02A37175400DD0AFA /* NumberPadCell.swift in Sources */,
+				54C945CE2A3737AC00DD0AFA /* PasscodeVC.swift in Sources */,
+				54C945C22A37280900DD0AFA /* PinView.swift in Sources */,
+				54C945B62A3717AB00DD0AFA /* NSObject+Extension.swift in Sources */,
+				5495F3192A371100005161F2 /* NibLoadable.swift in Sources */,
+				54C945AB2A37170A00DD0AFA /* NumberPadView.swift in Sources */,
+				5495F3002A370C00005161F2 /* pinCodeScreen.xcdatamodeld in Sources */,
+				5495F2FA2A370C00005161F2 /* ViewController.swift in Sources */,
+				5495F2F62A370C00005161F2 /* AppDelegate.swift in Sources */,
+				5495F2F82A370C00005161F2 /* SceneDelegate.swift in Sources */,
+				54C945CA2A3735E600DD0AFA /* CompletedVC.swift in Sources */,
+				54C945BD2A371B9E00DD0AFA /* NumberPadCellModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5495F2FB2A370C00005161F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5495F2FC2A370C00005161F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5495F3032A370C02005161F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5495F3042A370C02005161F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5495F3072A370C02005161F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5495F3082A370C02005161F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5495F30A2A370C02005161F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 876B4F97B7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pinCodeScreen/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testApp.pinCodeScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5495F30B2A370C02005161F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 876B4F97B7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pinCodeScreen/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testApp.pinCodeScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5495F2ED2A370C00005161F2 /* Build configuration list for PBXProject "pinCodeScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5495F3072A370C02005161F2 /* Debug */,
+				5495F3082A370C02005161F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5495F3092A370C02005161F2 /* Build configuration list for PBXNativeTarget "pinCodeScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5495F30A2A370C02005161F2 /* Debug */,
+				5495F30B2A370C02005161F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5495F2FE2A370C00005161F2 /* pinCodeScreen.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5495F2FF2A370C00005161F2 /* pinCodeScreen.xcdatamodel */,
+			);
+			currentVersion = 5495F2FF2A370C00005161F2 /* pinCodeScreen.xcdatamodel */;
+			path = pinCodeScreen.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5495F2EA2A370C00005161F2 /* Project object */;
+}

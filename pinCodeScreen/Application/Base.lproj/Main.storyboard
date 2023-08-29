@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pinCodeScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ph-Eq-pLz" customClass="NumberPadView" customModule="pinCodeScreen" customModuleProvider="target">
+                                <rect key="frame" x="50" y="259" width="293" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="a1c-6G-cUy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Au-xi-jlO" customClass="PinView" customModule="pinCodeScreen" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="89" width="393" height="98"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="hl5-Zr-Dqd"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="wJF-KT-bMj">
+                                <rect key="frame" x="186" y="416" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Ph-Eq-pLz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="NDr-aH-UmP"/>
+                            <constraint firstItem="0Au-xi-jlO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tn1-Kg-GqJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Au-xi-jlO" secondAttribute="trailing" id="URJ-xA-S3s"/>
+                            <constraint firstItem="0Au-xi-jlO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WKT-ap-YJM"/>
+                            <constraint firstItem="3Ph-Eq-pLz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="Z1D-Bc-5zU"/>
+                            <constraint firstItem="3Ph-Eq-pLz" firstAttribute="top" secondItem="0Au-xi-jlO" secondAttribute="bottom" constant="72" id="ZIl-eV-ral"/>
+                            <constraint firstItem="3Ph-Eq-pLz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cMx-Ho-3uE"/>
+                            <constraint firstAttribute="trailing" secondItem="3Ph-Eq-pLz" secondAttribute="trailing" constant="50" id="gLv-7r-2Zh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="wJF-KT-bMj" id="HbO-qa-PTQ"/>
+                        <outlet property="keyboardView" destination="3Ph-Eq-pLz" id="FLv-Bj-XHt"/>
+                        <outlet property="pinView" destination="0Au-xi-jlO" id="u5P-0D-9fd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
